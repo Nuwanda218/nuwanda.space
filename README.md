@@ -83,13 +83,23 @@ $env:PYTHONIOENCODING='utf-8'
 
 ## 待办
 
-1. **修正 GitHub 仓库名**：当前为 `nuwanda.sapce`（拼写错误），应改为 `nuwanda.space`。
-   需在 GitHub 仓库 Settings 中改名，然后更新本地 remote：
-   ```powershell
-   git remote set-url origin git@github.com:Nuwanda218/nuwanda.space.git
-   ```
-2. **编写博客本体**：填充 `post.html`、`about.html`、`assets/css/style.css`、`assets/js/*.js`、`data/posts.json`。
-3. **证书续期**：`nuwanda.space` 证书 2027-01-11 23:59:59 UTC 到期，需提前从原签发渠道换证。
+1. **编写博客本体**：填充 `post.html`、`about.html`、`assets/css/style.css`、`assets/js/*.js`、`data/posts.json`。
+2. **证书续期**：`nuwanda.space` 证书 2027-01-11 23:59:59 UTC 到期，需提前从原签发渠道换证。
+
+## 已知问题（暂不处理）
+
+**GitHub 仓库名拼写错误**：远程仓库为 `git@github.com:Nuwanda218/nuwanda.sapce.git`，
+`sapce` 应为 `space`。
+
+2026-10-14 决定**暂不改名**，因为不影响使用（推送、拉取均正常）。
+
+将来若要改名：在 GitHub 仓库 Settings 中改名为 `nuwanda.space`，然后执行
+
+```powershell
+git remote set-url origin git@github.com:Nuwanda218/nuwanda.space.git
+```
+
+GitHub 会自动重定向旧地址，但本地 remote 需手动更新。
 
 ## 技术栈
 

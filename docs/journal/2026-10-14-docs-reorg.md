@@ -72,8 +72,18 @@ git remote set-url origin git@github.com:Nuwanda218/nuwanda.space.git
 
 本机无 `gh` CLI、无 GitHub token，此步骤需人工在浏览器完成。
 
+**2026-10-14 决定：暂不改名。** 理由是不影响使用（`git ls-remote`、推送、拉取均正常）。
+本地 remote 保持指向 `nuwanda.sapce`。将来需要时再按上述步骤处理。
+
+## 备份处置决定
+
+**2026-10-14 决定：保留 `/root/nuwanda-backup/` 与 `/root/weihua-backup/`。**
+
+理由：合计仅 264 KB，位于 `/root` 下且 Web 不可访问，是当前唯一的配置回滚依据。
+它们属于运维安全资产，不是上传到服务器的开发文档，不违反「服务器只放项目代码」原则。
+
 ## 未执行的操作
 
-- 未删除 `/root/*-backup/` 备份目录（回滚安全网，需用户确认后再动）。
+- 未删除 `/root/*-backup/` 备份目录（用户决定保留）。
 - 未执行任何服务器端写入。
-- 未重命名 GitHub 仓库。
+- 未重命名 GitHub 仓库（用户决定暂不改名）。
