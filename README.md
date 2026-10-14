@@ -10,7 +10,7 @@
 | 服务器部署 | ✅ Nginx 静态托管，无应用进程 |
 | 证书到期检查 | ✅ `nuwanda-cert-check.timer` 已启用（**不自动续期**） |
 | 博客本体 | ⚠️ 仅占位页，`post.html`、`about.html`、`assets/`、`data/` 仍为空 |
-| GitHub 远程 | ⚠️ 仓库名拼写待修正，见下文 |
+| GitHub 远程 | ✅ `Nuwanda218/nuwanda.space`，已同步 |
 
 ## 文档索引
 
@@ -86,20 +86,16 @@ $env:PYTHONIOENCODING='utf-8'
 1. **编写博客本体**：填充 `post.html`、`about.html`、`assets/css/style.css`、`assets/js/*.js`、`data/posts.json`。
 2. **证书续期**：`nuwanda.space` 证书 2027-01-11 23:59:59 UTC 到期，需提前从原签发渠道换证。
 
-## 已知问题（暂不处理）
+## 仓库信息
 
-**GitHub 仓库名拼写错误**：远程仓库为 `git@github.com:Nuwanda218/nuwanda.sapce.git`，
-`sapce` 应为 `space`。
+| 项 | 值 |
+|---|---|
+| 远程地址 | `git@github.com:Nuwanda218/nuwanda.space.git` |
+| 分支 | `master`（已设置上游跟踪） |
+| 可见性 | ⚠️ 公开仓库 |
 
-2026-10-14 决定**暂不改名**，因为不影响使用（推送、拉取均正常）。
-
-将来若要改名：在 GitHub 仓库 Settings 中改名为 `nuwanda.space`，然后执行
-
-```powershell
-git remote set-url origin git@github.com:Nuwanda218/nuwanda.space.git
-```
-
-GitHub 会自动重定向旧地址，但本地 remote 需手动更新。
+> 2026-10-14：仓库名曾误拼为 `nuwanda.sapce`，已在 GitHub 改名修正。
+> 旧地址 `nuwanda.sapce` 由 GitHub 自动 301 重定向到新地址。
 
 ## 技术栈
 

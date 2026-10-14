@@ -72,8 +72,25 @@ git remote set-url origin git@github.com:Nuwanda218/nuwanda.space.git
 
 本机无 `gh` CLI、无 GitHub token，此步骤需人工在浏览器完成。
 
-**2026-10-14 决定：暂不改名。** 理由是不影响使用（`git ls-remote`、推送、拉取均正常）。
-本地 remote 保持指向 `nuwanda.sapce`。将来需要时再按上述步骤处理。
+**2026-10-14 已修正。** 用户在 GitHub 网页将仓库改名为 `nuwanda.space`，随后完成：
+
+```powershell
+git remote set-url origin git@github.com:Nuwanda218/nuwanda.space.git
+git push -u origin master
+```
+
+验证结果：
+
+| 检查项 | 结果 |
+|---|---|
+| 新地址 SSH 连通性 | ✅ `git ls-remote` 成功 |
+| 旧地址 `nuwanda.sapce` | ✅ GitHub 自动 301 重定向到新地址 |
+| 推送 | ✅ `5e7e6b2..d452865  master -> master` |
+| 本地 HEAD vs 远程 master | ✅ 均为 `d452865`，无差异 |
+| 上游跟踪 | ✅ `master` 已跟踪 `origin/master` |
+
+⚠️ 附带发现：该仓库为**公开仓库**（未登录 HTTPS 访问返回 200）。
+`docs/architecture.md` 中含服务器公网 IP，但该 IP 本身已通过 `nuwanda.space` 的 DNS A 记录公开，不构成新增信息泄露。仓库内无任何密钥（`.gitignore` 已排除 `*.key`、`*.pem`、`.deploy-private/`）。
 
 ## 备份处置决定
 
@@ -86,4 +103,3 @@ git remote set-url origin git@github.com:Nuwanda218/nuwanda.space.git
 
 - 未删除 `/root/*-backup/` 备份目录（用户决定保留）。
 - 未执行任何服务器端写入。
-- 未重命名 GitHub 仓库（用户决定暂不改名）。
