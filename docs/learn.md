@@ -39,6 +39,182 @@ git push
 3. 提交一次 commit。
 4. 修改文件后再次查看差异。
 
+## 终端创建文件和文件夹
+
+你当前环境是 Windows，终端大概率是 PowerShell。下面先记 PowerShell 命令，再记 Git Bash / macOS / Linux 对照。
+
+### PowerShell 常用命令
+
+查看当前所在目录：
+
+```powershell
+Get-Location
+```
+
+查看当前目录下的文件和文件夹：
+
+```powershell
+Get-ChildItem
+```
+
+进入某个文件夹：
+
+```powershell
+Set-Location F:\website\Nuwanda-space
+```
+
+也可以用短命令：
+
+```powershell
+cd F:\website\Nuwanda-space
+```
+
+创建一个文件夹：
+
+```powershell
+New-Item -ItemType Directory -Path assets
+```
+
+创建多层文件夹：
+
+```powershell
+New-Item -ItemType Directory -Path assets\css
+New-Item -ItemType Directory -Path assets\js
+New-Item -ItemType Directory -Path data\comments
+```
+
+创建一个空文件：
+
+```powershell
+New-Item -ItemType File -Path index.html
+```
+
+创建多个空文件：
+
+```powershell
+New-Item -ItemType File -Path index.html
+New-Item -ItemType File -Path post.html
+New-Item -ItemType File -Path about.html
+New-Item -ItemType File -Path assets\css\style.css
+New-Item -ItemType File -Path assets\js\main.js
+New-Item -ItemType File -Path assets\js\post.js
+New-Item -ItemType File -Path assets\js\utils.js
+New-Item -ItemType File -Path data\posts.json
+New-Item -ItemType File -Path data\comments\first-post.json
+```
+
+如果文件已经存在，`New-Item` 可能报错。可以先用 `Test-Path` 检查：
+
+```powershell
+Test-Path index.html
+```
+
+删除空文件：
+
+```powershell
+Remove-Item index.html
+```
+
+删除文件夹：
+
+```powershell
+Remove-Item assets -Recurse
+```
+
+注意：删除命令要小心，尤其是带 `-Recurse` 时会删除文件夹里的所有内容。
+
+### Git Bash / macOS / Linux 对照
+
+查看当前所在目录：
+
+```bash
+pwd
+```
+
+查看当前目录下的文件和文件夹：
+
+```bash
+ls
+```
+
+进入某个文件夹：
+
+```bash
+cd /f/website/Nuwanda-space
+```
+
+创建一个文件夹：
+
+```bash
+mkdir assets
+```
+
+创建多层文件夹：
+
+```bash
+mkdir -p assets/css assets/js data/comments
+```
+
+创建一个空文件：
+
+```bash
+touch index.html
+```
+
+创建多个空文件：
+
+```bash
+touch index.html post.html about.html
+touch assets/css/style.css
+touch assets/js/main.js assets/js/post.js assets/js/utils.js
+touch data/posts.json data/comments/first-post.json
+```
+
+删除文件：
+
+```bash
+rm index.html
+```
+
+删除文件夹：
+
+```bash
+rm -r assets
+```
+
+注意：`rm -r` 会递归删除文件夹内容，执行前要确认路径正确。
+
+### 本项目第一版结构创建命令
+
+PowerShell 版本：
+
+```powershell
+New-Item -ItemType Directory -Path assets\css
+New-Item -ItemType Directory -Path assets\js
+New-Item -ItemType Directory -Path assets\images
+New-Item -ItemType Directory -Path data\comments
+New-Item -ItemType File -Path index.html
+New-Item -ItemType File -Path post.html
+New-Item -ItemType File -Path about.html
+New-Item -ItemType File -Path assets\css\style.css
+New-Item -ItemType File -Path assets\js\main.js
+New-Item -ItemType File -Path assets\js\post.js
+New-Item -ItemType File -Path assets\js\utils.js
+New-Item -ItemType File -Path data\posts.json
+New-Item -ItemType File -Path data\comments\first-post.json
+New-Item -ItemType File -Path .gitignore
+```
+
+Git Bash / macOS / Linux 版本：
+
+```bash
+mkdir -p assets/css assets/js assets/images data/comments
+touch index.html post.html about.html
+touch assets/css/style.css
+touch assets/js/main.js assets/js/post.js assets/js/utils.js
+touch data/posts.json data/comments/first-post.json .gitignore
+```
+
 ## 阶段 1：网页基础
 
 需要理解：

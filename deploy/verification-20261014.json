@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Shanghai",
+  "checks": [
+    {
+      "name": "blog_https",
+      "url": "https://nuwanda.space/",
+      "status": 200,
+      "tls_verify": "0",
+      "result": "PASS",
+      "forced_resolution": null
+    },
+    {
+      "name": "http_redirect",
+      "url": "http://nuwanda.space/",
+      "status": 301,
+      "tls_verify": "0",
+      "result": "PASS",
+      "forced_resolution": null
+    },
+    {
+      "name": "redirect_preserves_query",
+      "url": "http://nuwanda.space/post.html?lang=zh&item=%E5%B9%B4%E7%94%BB",
+      "status": 301,
+      "tls_verify": "0",
+      "result": "PASS",
+      "forced_resolution": null
+    },
+    {
+      "name": "www_https_config",
+      "url": "https://www.nuwanda.space/",
+      "status": 301,
+      "tls_verify": "0",
+      "result": "PASS",
+      "forced_resolution": "www.nuwanda.space:443:39.98.83.105"
+    },
+    {
+      "name": "weihua_unchanged",
+      "url": "https://weihua.art/",
+      "status": 200,
+      "tls_verify": "0",
+      "result": "PASS",
+      "forced_resolution": null
+    },
+    {
+      "name": "weihua_proto_unchanged",
+      "url": "https://weihua.art/proto/",
+      "status": 200,
+      "tls_verify": "0",
+      "result": "PASS",
+      "forced_resolution": null
+    },
+    {
+      "name": "no_project_proto_in_blog",
+      "url": "https://nuwanda.space/proto/",
+      "status": 404,
+      "tls_verify": "0",
+      "result": "PASS",
+      "forced_resolution": null
+    },
+    {
+      "name": "deny_git",
+      "url": "https://nuwanda.space/.git/config",
+      "status": 403,
+      "tls_verify": "0",
+      "result": "PASS",
+      "forced_resolution": null
+    },
+    {
+      "name": "deny_private_key",
+      "url": "https://nuwanda.space/nuwanda.space.key",
+      "status": 403,
+      "tls_verify": "0",
+      "result": "PASS",
+      "forced_resolution": null
+    },
+    {
+      "name": "deny_certificate_archive",
+      "url": "https://nuwanda.space/27832570_nuwanda.space_nginx.zip",
+      "status": 403,
+      "tls_verify": "0",
+      "result": "PASS",
+      "forced_resolution": null
+    }
+  ]
+}

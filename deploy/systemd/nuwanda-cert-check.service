@@ -1,0 +1,6 @@
+[Unit]
+Description=Check nuwanda.space certificate expiry (30 day warning)
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/openssl x509 -checkend 2592000 -noout -in /etc/ssl/nuwanda.space/nuwanda.space.pem
