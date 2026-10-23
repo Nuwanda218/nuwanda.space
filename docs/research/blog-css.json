@@ -1,0 +1,107 @@
+[
+  {
+    "full_name": "assemble/assemble",
+    "stargazers_count": 4256,
+    "language": "CSS",
+    "pushed_at": "2022-02-20T09:16:14Z",
+    "description": "Get the rocks out of your socks! Assemble makes you fast at web development! Used by thousands of projects for rapid prototyping, themes, scaffolds, boilerplates, e-books, UI components, API documentation, blogs, building websites/static site generator, an alternative to Jekyll for gh-pages and more! Gulp- and grunt-friendly.  "
+  },
+  {
+    "full_name": "iblh/hexo-theme-material",
+    "stargazers_count": 4020,
+    "language": "CSS",
+    "pushed_at": "2022-05-18T09:25:36Z",
+    "description": "Material Design theme for hexo."
+  },
+  {
+    "full_name": "poole/poole",
+    "stargazers_count": 2848,
+    "language": "CSS",
+    "pushed_at": "2024-05-23T02:50:01Z",
+    "description": "The Jekyll Butler. A no frills responsive Jekyll blog theme."
+  },
+  {
+    "full_name": "panr/hugo-theme-terminal",
+    "stargazers_count": 2813,
+    "language": "CSS",
+    "pushed_at": "2026-09-21T21:32:47Z",
+    "description": "A simple, retro theme for Hugo"
+  },
+  {
+    "full_name": "nanxiaobei/hugo-paper",
+    "stargazers_count": 2416,
+    "language": "CSS",
+    "pushed_at": "2026-08-21T02:22:09Z",
+    "description": "🪺 A simple, clean, customizable Hugo theme"
+  },
+  {
+    "full_name": "mattvh/jekyllthemes",
+    "stargazers_count": 2332,
+    "language": "CSS",
+    "pushed_at": "2024-07-10T18:45:27Z",
+    "description": "A directory of the best-looking themes for Jekyll blogs"
+  },
+  {
+    "full_name": "theme-nexmoe/hexo-theme-nexmoe",
+    "stargazers_count": 1738,
+    "language": "CSS",
+    "pushed_at": "2026-02-03T21:44:16Z",
+    "description": "🔥 A special Hexo theme focusing on pictures and images. Images tell stories, and Nexmoe makes them more vivid."
+  },
+  {
+    "full_name": "nielsenramon/chalk",
+    "stargazers_count": 1283,
+    "language": "CSS",
+    "pushed_at": "2024-04-09T14:57:31Z",
+    "description": "Chalk is a high quality, completely customizable, performant and 100% free Jekyll blog theme."
+  },
+  {
+    "full_name": "spymastermatt/thunderbird-monterail",
+    "stargazers_count": 1048,
+    "language": "CSS",
+    "pushed_at": "2020-05-18T06:09:47Z",
+    "description": "A set of themes for thunderbird inspired by a Monterail blog post"
+  },
+  {
+    "full_name": "LIlGG/halo-theme-sakura",
+    "stargazers_count": 963,
+    "language": "CSS",
+    "pushed_at": "2026-08-21T04:36:23Z",
+    "description": "Halo 版本的樱花🌸主题"
+  },
+  {
+    "full_name": "kaeyleo/jekyll-theme-H2O",
+    "stargazers_count": 926,
+    "language": "CSS",
+    "pushed_at": "2023-02-27T21:40:45Z",
+    "description": " 🎉 A clean and delicate Jekyll theme. Jekyll博客主题"
+  },
+  {
+    "full_name": "FOSSASIA-Web/fossasia-jekyll-theme",
+    "stargazers_count": 885,
+    "language": "CSS",
+    "pushed_at": "2018-12-10T07:57:28Z",
+    "description": "Jekyll Theme for FOSSASIA blogs"
+  },
+  {
+    "full_name": "zhaohuabing/hugo-theme-cleanwhite",
+    "stargazers_count": 828,
+    "language": "CSS",
+    "pushed_at": "2026-02-19T13:03:02Z",
+    "description": "A clean, elegant blog theme for hugo"
+  },
+  {
+    "full_name": "g1eny0ung/hugo-theme-dream",
+    "stargazers_count": 587,
+    "language": "CSS",
+    "pushed_at": "2026-10-06T11:43:46Z",
+    "description": "🌱 A Hugo theme named Dream."
+  },
+  {
+    "full_name": "lacymorrow/casper",
+    "stargazers_count": 552,
+    "language": "CSS",
+    "pushed_at": "2026-05-20T19:55:41Z",
+    "description": "Casper 👻 theme for Wordpress"
+  }
+]

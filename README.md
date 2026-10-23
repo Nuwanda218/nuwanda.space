@@ -1,102 +1,88 @@
 # Nuwanda Space
 
-个人博客项目。域名 `nuwanda.space`，部署在自建服务器 `weihua` 上，由 Nginx 直接托管静态文件。
+个人博客，记录生活与摄影、学习与思考，以及国旗护卫队的共同经历。站点域名：<https://nuwanda.space/>。
 
-## 当前状态
+## 当前工程
 
-| 项 | 状态 |
-|---|---|
-| 域名与 HTTPS | ✅ 已上线，`https://nuwanda.space/` 返回 200 |
-| 服务器部署 | ✅ Nginx 静态托管，无应用进程 |
-| 证书到期检查 | ✅ `nuwanda-cert-check.timer` 已启用（**不自动续期**） |
-| 博客本体 | ⚠️ 仅占位页，`post.html`、`about.html`、`assets/`、`data/` 仍为空 |
-| GitHub 远程 | ✅ `Nuwanda218/nuwanda.space`，已同步 |
+- Astro + TypeScript，使用原生 Astro 组件与 CSS。
+- 博客页面静态生成；Node standalone 保留 SSR/API 验收入口。
+- 内容从 `materials/` 自动发现，图片通过 Astro 生成响应式资源。
+- PostgreSQL Compose 用于本地环境验证；当前博客内容由 Markdown 与照片提供。
+- 标有演示的条目用于验证展示结构，不代表已发表文章或真实事件。
 
-## 文档索引
+线上发布的历史证据见验收报告。提交或推送 Git 不等于执行生产部署。
 
-所有开发文档、日志、脚本**只保存在本地**，不上传服务器。
+## 本地开发
 
-| 文档 | 内容 |
-|---|---|
-| [docs/architecture.md](docs/architecture.md) | 服务器架构、两个项目的并存关系、隔离边界、备份回滚 |
-| [docs/deployment.md](docs/deployment.md) | 部署规范：服务器只放项目代码；同步流程与验证 |
-| [docs/roadmap.md](docs/roadmap.md) | 学习路线（阶段 1–7，含 Cloudflare Pages / R2 / Workers 备选路线） |
-| [docs/learn.md](docs/learn.md) | 学习笔记：网页基础、Git、网络、内容管理、安全 |
-| [docs/journal/2026-10-14-https-deploy.md](docs/journal/2026-10-14-https-deploy.md) | 开发日志：HTTPS 部署验收记录 |
+版本与依赖以 `.node-version`、`package.json` 和 `package-lock.json` 为准。首次配置按[本地开发指南](docs/local-development.md)执行，私有环境变量留在被忽略的 `.env.local` 中。
 
-## 目录结构
-
-```
-Nuwanda-space/
-├── README.md                  # 本文件（本地）
-├── .gitignore
-│
-├── index.html                 # ┐
-├── post.html                  # │ 站点代码
-├── about.html                 # │ 唯一会被同步到服务器的内容
-├── assets/                    # │ → /srv/nuwanda-blog/web/
-├── data/                      # ┘
-│
-├── docs/                      # 📍 开发文档，不上传
-│   ├── architecture.md
-│   ├── deployment.md
-│   ├── roadmap.md
-│   ├── learn.md
-│   └── journal/
-│       └── 2026-10-14-https-deploy.md
-│
-├── deploy/                    # 📍 运维资产，不上传
-│   ├── deploy-site.ps1        # 只同步站点代码的部署脚本
-│   ├── install_tls.py
-│   ├── verify_tls.py
-│   ├── verification-20261014.json
-│   ├── nginx/nuwanda.space.conf
-│   └── systemd/nuwanda-cert-check.{service,timer}
-│
-└── .deploy-private/           # 🔒 证书私钥暂存（已 gitignore）
-```
-
-## 核心规则
-
-> **服务器资源宝贵，只放运行所需的项目代码。**
-> 所有开发文档、日志、验收记录、脚本一律留在本地。
-
-- 上传白名单：`index.html`、`post.html`、`about.html`、`assets/`、`data/`
-- 其余一切（`README.md`、`docs/`、`deploy/`、`.git/`）**永不上传**
-- 服务器上不允许出现 `.md`、`.txt`、`.log` 形式的开发文档或日志
-
-详见 [docs/deployment.md](docs/deployment.md)。
-
-## 常用命令
+已配置好的本机使用项目 Node 包装脚本：
 
 ```powershell
-# 预览将要同步的文件（不实际执行）
-.\deploy\deploy-site.ps1 -DryRun
+# 开发服务，访问终端输出的地址
+.\scripts\local.ps1 run dev
 
-# 同步站点代码到服务器
-.\deploy\deploy-site.ps1
+# 顺序检查、测试、构建
+.\scripts\local.ps1 run check
+.\scripts\local.ps1 run test
+.\scripts\local.ps1 run build
 
-# 公网只读验证
-$env:PYTHONIOENCODING='utf-8'
-& 'D:\python310\python.exe' '.\deploy\verify_tls.py'
+# 构建产物、页面框架、敏感信息检查
+.\scripts\local.ps1 run test:output
+.\scripts\local.ps1 run test:framework
+.\scripts\local.ps1 run check:security
+
+# 构建预览
+.\scripts\local.ps1 run start
 ```
 
-## 待办
+`verify` 还包含本地数据库检查，运行前需准备对应 Docker/数据库环境。浏览器验收要求见[框架验收记录](docs/phase1-framework.md)。
 
-1. **编写博客本体**：填充 `post.html`、`about.html`、`assets/css/style.css`、`assets/js/*.js`、`data/posts.json`。
-2. **证书续期**：`nuwanda.space` 证书 2027-01-11 23:59:59 UTC 到期，需提前从原签发渠道换证。
+## 写作与素材
 
-## 仓库信息
+在对应栏目中新建文件夹，放入 `index.md` 和照片即可。开发服务自动发现变化，正式构建会重新收集内容。
 
-| 项 | 值 |
-|---|---|
-| 远程地址 | `git@github.com:Nuwanda218/nuwanda.space.git` |
-| 分支 | `master`（已设置上游跟踪） |
-| 可见性 | ⚠️ 公开仓库 |
+| 内容 | 入口 |
+| --- | --- |
+| 个人介绍、标语与关键词 | `materials/site/profile.json` |
+| 生活记录与摄影 | `materials/life/` |
+| 学习笔记与文章 | `materials/notes/` |
+| 国旗护卫队专题 | `materials/guard/` |
+| 新内容模板，默认草稿 | `materials/_templates/` |
 
-> 2026-10-14：仓库名曾误拼为 `nuwanda.sapce`，已在 GitHub 改名修正。
-> 旧地址 `nuwanda.sapce` 由 GitHub 自动 301 重定向到新地址。
+无需修改页面注册表或手动导入每张图片。完整操作见[素材区使用指南](docs/素材区使用指南.md)和[素材入口说明](materials/README.md)。
 
-## 技术栈
+## 目录
 
-纯静态：HTML + CSS + JavaScript，无构建工具、无框架、无服务端进程。
+```text
+src/          页面、布局、组件、样式与素材读取逻辑
+materials/    Markdown 正文、原始照片与个人文案
+public/       直接发布的公共资源
+scripts/      本地开发、环境和验收工具
+tests/        自动化测试
+deploy/       部署、验证与回滚工具
+docs/         设计、操作指南、历史记录与调研
+.local/       本地运行时、私有环境与验收输出，Git 忽略
+dist/         Astro 构建产物，Git 忽略
+```
+
+## 文档入口
+
+- [前端设计、开发与优化流程草案](docs/design/frontend-workflow-20261023.md)
+- [素材区使用指南](docs/素材区使用指南.md)
+- [本地开发指南](docs/local-development.md)
+- [框架与素材接入验收记录](docs/phase1-framework.md)
+- [Astro 部署说明](docs/deployment-homepage-v01.md)
+- [首页 v0.1 历史验收报告](docs/homepage-v01-report.md)
+- [部署边界与历史说明](docs/deployment.md)
+- [对象存储资料](docs/storage.md)
+- [设计参考与原始调研](docs/research/open-source-designs.md)
+- [整理前 README 归档](docs/journal/2026-10-23-pre-astro-readme.md)
+
+历史文档按其记录日期理解，旧纯静态目录、Cloudflare 备选路线和旧部署脚本不替代当前源码与 Astro 部署说明。
+
+## Git 与发布边界
+
+源码、内容素材、配置、依赖锁文件、部署工具与文档纳入 Git。依赖目录、构建产物、本地缓存、测试输出、私有环境与证书由 `.gitignore` 排除。
+
+生产发布使用现有 Astro 部署与回滚流程，包含 `dist/client/` 和 `dist/server/`。旧 `deploy/deploy-site.ps1` 的纯静态白名单不适用于当前工程。开发文档和本地缓存不随运行产物上传生产服务器。

@@ -1,0 +1,79 @@
+[
+  {
+    "full_name": "arthelokyo/astrowind",
+    "stargazers_count": 6041,
+    "language": "Astro",
+    "pushed_at": "2026-09-12T07:29:57Z",
+    "description": "⭕️ AstroWind: A free template using Astro v7 and Tailwind CSS v4. Astro starter theme."
+  },
+  {
+    "full_name": "satnaing/astro-paper",
+    "stargazers_count": 5122,
+    "language": "Astro",
+    "pushed_at": "2026-10-08T07:00:47Z",
+    "description": "A minimal, accessible and SEO-friendly Astro blog theme."
+  },
+  {
+    "full_name": "CuteLeaf/Firefly",
+    "stargazers_count": 2312,
+    "language": "Astro",
+    "pushed_at": "2026-10-12T17:36:44Z",
+    "description": "🍀Firefly, fresh and aesthetic Astro blog theme template. "
+  },
+  {
+    "full_name": "surjithctly/astroship",
+    "stargazers_count": 1986,
+    "language": "Astro",
+    "pushed_at": "2026-10-05T13:42:01Z",
+    "description": "Astroship is a starter template for startups, marketing websites, landing pages & blog. Built with Astro & TailwindCSS"
+  },
+  {
+    "full_name": "LyraVoid/Mizuki",
+    "stargazers_count": 1897,
+    "language": "Astro",
+    "pushed_at": "2026-10-01T08:44:10Z",
+    "description": "Next-Gen Material Design 3 Blog Theme (Astro Powered)"
+  },
+  {
+    "full_name": "chrismwilliams/astro-theme-cactus",
+    "stargazers_count": 1736,
+    "language": "Astro",
+    "pushed_at": "2026-09-22T07:13:13Z",
+    "description": "A simple Astro theme. Use it to create your blog or website."
+  },
+  {
+    "full_name": "manuelernestog/astrofy",
+    "stargazers_count": 1440,
+    "language": "Astro",
+    "pushed_at": "2024-07-04T19:41:11Z",
+    "description": "Astrofy is a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS. Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed."
+  },
+  {
+    "full_name": "mearashadowfax/ScrewFast",
+    "stargazers_count": 1424,
+    "language": "Astro",
+    "pushed_at": "2026-10-11T17:43:32Z",
+    "description": "Open-source Astro website template with sleek, customizable TailwindCSS components"
+  },
+  {
+    "full_name": "incluud/accessible-astro-starter",
+    "stargazers_count": 1188,
+    "language": "Astro",
+    "pushed_at": "2026-09-12T13:04:19Z",
+    "description": "An Accessible, WCAG compliant Starter Theme for Astro 6+ including several accessibility features such as, better focus-outline, landmarks, semantics, interactive components and skip-link navigation. Ships with Tailwind 4, Prettier and ESLint support."
+  },
+  {
+    "full_name": "cworld1/astro-theme-pure",
+    "stargazers_count": 1103,
+    "language": "Astro",
+    "pushed_at": "2026-09-26T12:21:09Z",
+    "description": "⭐ A simple, fast and powerful blog & document theme built by Astro"
+  },
+  {
+    "full_name": "danielcgilibert/blog-template",
+    "stargazers_count": 1020,
+    "language": "Astro",
+    "pushed_at": "2025-01-14T23:18:12Z",
+    "description": "📚 Openblog is an elegant, simple, and user-friendly blog. Focused on accessibility, SEO and performance."
+  }
+]

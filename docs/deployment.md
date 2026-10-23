@@ -1,5 +1,7 @@
 # 部署规范：服务器只放项目代码
 
+> 2026-10-15 首页 v0.1 使用新的 Astro standalone 部署方案，见 [v0.1 部署方案](deployment-homepage-v01.md)。下文旧静态文件白名单及 deploy-site.ps1 仅作历史记录；新部署白名单为 dist、锁定依赖清单和必需的服务/Nginx 配置，开发文档仍禁止上传。
+
 > 核心原则：**服务器资源宝贵，只放运行所需的项目代码。所有开发文档、日志、验收记录、脚本一律留在本地。**
 
 ## 1. 边界规则
@@ -23,6 +25,7 @@
 | 学习路线 | `docs/roadmap.md` | 开发文档 |
 | 架构说明 | `docs/architecture.md` | 开发文档 |
 | 部署规范 | `docs/deployment.md` | 开发文档 |
+| 对象存储规范 | `docs/storage.md` | 开发文档 |
 | 开发日志 | `docs/journal/` | 开发日志 |
 | 验收记录与结果 | `deploy/verification-*.json` | 开发日志 |
 | 运维脚本 | `deploy/install_tls.py`、`deploy/verify_tls.py` | 本地工具 |

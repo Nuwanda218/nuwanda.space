@@ -1,0 +1,44 @@
+[
+  {
+    "full_name": "stephane-monnot/react-vertical-timeline",
+    "stargazers_count": 1163,
+    "language": "CSS",
+    "pushed_at": "2026-02-08T08:21:42Z",
+    "description": "Vertical timeline for React.js"
+  },
+  {
+    "full_name": "bradfrost/project-hub",
+    "stargazers_count": 910,
+    "language": "CSS",
+    "pushed_at": "2019-10-13T06:19:21Z",
+    "description": "An HTML template for project timelines"
+  },
+  {
+    "full_name": "NigelOToole/progress-tracker",
+    "stargazers_count": 513,
+    "language": "CSS",
+    "pushed_at": "2026-01-21T23:27:41Z",
+    "description": "A HTML component to illustrate the steps in a multi step process e.g. a multi step form, a timeline or a quiz."
+  },
+  {
+    "full_name": "codrops/Blueprint-VerticalTimeline",
+    "stargazers_count": 465,
+    "language": "CSS",
+    "pushed_at": "2014-04-14T16:15:17Z",
+    "description": "A responsive vertical timeline layout with icons and example media queries."
+  },
+  {
+    "full_name": "rpocklin/angular-timeline",
+    "stargazers_count": 419,
+    "language": "CSS",
+    "pushed_at": "2018-04-18T22:45:52Z",
+    "description": "An Angular.JS directive that generates a responsive, data-driven vertical timeline to tell a story,  show history or describe a sequence of events."
+  },
+  {
+    "full_name": "jcoelho93/personal-website",
+    "stargazers_count": 171,
+    "language": "CSS",
+    "pushed_at": "2026-09-23T07:49:04Z",
+    "description": "A clean, modern and customizable personal website to showcase your professional profile. Just fork and customize"
+  }
+]

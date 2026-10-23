@@ -1,0 +1,182 @@
+[
+  {
+    "repo": "adityatelange/hugo-PaperMod",
+    "stars": 13996,
+    "license": "MIT",
+    "branch": "master",
+    "homepage": "https://adityatelange.github.io/hugo-PaperMod/",
+    "archived": false,
+    "pushed": "08/02/2026 18:00:13"
+  },
+  {
+    "repo": "CaiJimmy/hugo-theme-stack",
+    "stars": 6478,
+    "license": "GPL-3.0",
+    "branch": "master",
+    "homepage": "https://stack.cai.im",
+    "archived": false,
+    "pushed": "05/25/2026 08:44:26"
+  },
+  {
+    "repo": "nanxiaobei/hugo-paper",
+    "stars": 2416,
+    "license": "MIT",
+    "branch": "main",
+    "homepage": "https://hugo-paper.vercel.app",
+    "archived": false,
+    "pushed": "08/21/2026 02:22:09"
+  },
+  {
+    "repo": "panr/hugo-theme-terminal",
+    "stars": 2813,
+    "license": "MIT",
+    "branch": "master",
+    "homepage": "",
+    "archived": false,
+    "pushed": "09/21/2026 21:32:47"
+  },
+  {
+    "repo": "luizdepra/hugo-coder",
+    "stars": 3115,
+    "license": "MIT",
+    "branch": "main",
+    "homepage": "",
+    "archived": false,
+    "pushed": "06/18/2026 03:03:27"
+  },
+  {
+    "repo": "sergiokopplin/indigo",
+    "stars": 2720,
+    "license": "NONE",
+    "branch": "gh-pages",
+    "homepage": "https://sergiokopplin.github.io/indigo/",
+    "archived": false,
+    "pushed": "07/27/2024 17:59:31"
+  },
+  {
+    "repo": "poole/poole",
+    "stars": 2848,
+    "license": "NOASSERTION",
+    "branch": "master",
+    "homepage": "https://getpoole.com",
+    "archived": false,
+    "pushed": "05/23/2024 02:50:01"
+  },
+  {
+    "repo": "mzlogin/mzlogin.github.io",
+    "stars": 1659,
+    "license": "MIT",
+    "branch": "master",
+    "homepage": "https://mazhuang.org",
+    "archived": false,
+    "pushed": "07/21/2026 03:51:47"
+  },
+  {
+    "repo": "satnaing/astro-paper",
+    "stars": 5122,
+    "license": "MIT",
+    "branch": "main",
+    "homepage": "https://astro-paper.pages.dev/",
+    "archived": false,
+    "pushed": "10/08/2026 07:00:47"
+  },
+  {
+    "repo": "chrismwilliams/astro-theme-cactus",
+    "stars": 1736,
+    "license": "MIT",
+    "branch": "main",
+    "homepage": "https://astro-cactus.chriswilliams.dev/",
+    "archived": false,
+    "pushed": "09/22/2026 07:13:13"
+  },
+  {
+    "repo": "LyraVoid/Mizuki",
+    "stars": 1897,
+    "license": "Apache-2.0",
+    "branch": "master",
+    "homepage": "https://mizuki.mysqil.com",
+    "archived": false,
+    "pushed": "10/01/2026 08:44:10"
+  },
+  {
+    "repo": "CuteLeaf/Firefly",
+    "stars": 2312,
+    "license": "MIT",
+    "branch": "master",
+    "homepage": "https://firefly.cuteleaf.cn",
+    "archived": false,
+    "pushed": "10/12/2026 17:36:44"
+  },
+  {
+    "repo": "codrops/Blueprint-VerticalTimeline",
+    "stars": 465,
+    "license": "NONE",
+    "branch": "master",
+    "homepage": null,
+    "archived": false,
+    "pushed": "04/14/2014 16:15:17"
+  },
+  {
+    "repo": "codyhouse/vertical-timeline",
+    "stars": 577,
+    "license": "NONE",
+    "branch": "master",
+    "homepage": "https://codyhouse.co",
+    "archived": false,
+    "pushed": "03/13/2020 10:53:04"
+  },
+  {
+    "repo": "bradfrost/project-hub",
+    "stars": 910,
+    "license": "MIT",
+    "branch": "master",
+    "homepage": null,
+    "archived": false,
+    "pushed": "10/13/2019 06:19:21"
+  },
+  {
+    "repo": "NUKnightLab/TimelineJS3",
+    "stars": 3225,
+    "license": "MPL-2.0",
+    "branch": "master",
+    "homepage": null,
+    "archived": false,
+    "pushed": "09/22/2026 17:32:49"
+  },
+  {
+    "repo": "visjs/vis-timeline",
+    "stars": 2568,
+    "license": "NOASSERTION",
+    "branch": "master",
+    "homepage": "https://visjs.github.io/vis-timeline/",
+    "archived": false,
+    "pushed": "10/13/2026 14:29:35"
+  },
+  {
+    "repo": "squarechip/timeline",
+    "stars": 373,
+    "license": "MIT",
+    "branch": "master",
+    "homepage": "https://squarechip.github.io/timeline/",
+    "archived": false,
+    "pushed": "12/06/2022 15:21:03"
+  },
+  {
+    "repo": "NigelOToole/progress-tracker",
+    "stars": 513,
+    "license": "MIT",
+    "branch": "master",
+    "homepage": "http://nigelotoole.github.io/progress-tracker/",
+    "archived": false,
+    "pushed": "01/21/2026 23:27:41"
+  },
+  {
+    "repo": "evilrabbit/lifeline",
+    "stars": 540,
+    "license": "MIT",
+    "branch": "main",
+    "homepage": "https://lifeline-evil-rabbit.vercel.app",
+    "archived": false,
+    "pushed": "07/31/2026 16:42:28"
+  }
+]

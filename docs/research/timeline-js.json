@@ -1,0 +1,107 @@
+[
+  {
+    "full_name": "NUKnightLab/TimelineJS",
+    "stargazers_count": 8930,
+    "language": "JavaScript",
+    "pushed_at": "2022-05-11T20:13:40Z",
+    "description": "TimelineJS: A Storytelling Timeline built in JavaScript. "
+  },
+  {
+    "full_name": "alyssaxuu/motionity",
+    "stargazers_count": 4119,
+    "language": "JavaScript",
+    "pushed_at": "2022-09-12T02:06:50Z",
+    "description": "The web-based motion graphics editor for everyone 📽"
+  },
+  {
+    "full_name": "twitter/labella.js",
+    "stargazers_count": 3870,
+    "language": "JavaScript",
+    "pushed_at": "2023-04-10T11:45:02Z",
+    "description": "Placing labels on a timeline without overlap."
+  },
+  {
+    "full_name": "NUKnightLab/TimelineJS3",
+    "stargazers_count": 3225,
+    "language": "JavaScript",
+    "pushed_at": "2026-09-22T17:32:49Z",
+    "description": "TimelineJS v3: A Storytelling Timeline built in JavaScript.  http://timeline.knightlab.com"
+  },
+  {
+    "full_name": "insin/control-panel-for-twitter",
+    "stargazers_count": 2643,
+    "language": "JavaScript",
+    "pushed_at": "2026-10-13T03:42:14Z",
+    "description": "Browser extension which gives you more control over your Twitter timeline and adds missing features and UI improvements - for desktop and mobile"
+  },
+  {
+    "full_name": "visjs/vis-timeline",
+    "stargazers_count": 2568,
+    "language": "JavaScript",
+    "pushed_at": "2026-10-13T14:29:35Z",
+    "description": "📅 Create a fully customizable, interactive timelines and 2d-graphs with items and ranges."
+  },
+  {
+    "full_name": "vkurko/calendar",
+    "stargazers_count": 2288,
+    "language": "JavaScript",
+    "pushed_at": "2026-10-09T10:02:00Z",
+    "description": "Full-sized drag & drop JavaScript event calendar with resource & timeline views"
+  },
+  {
+    "full_name": "gnat/surreal",
+    "stargazers_count": 1741,
+    "language": "JavaScript",
+    "pushed_at": "2026-05-27T13:12:42Z",
+    "description": "🗿 Mini jQuery alternative. Dependency-free animations. Locality of Behavior.  Use one element or arrays transparently. Pairs with htmx. Vanilla querySelector() but better!"
+  },
+  {
+    "full_name": "FOSSASIA-Web/timeline.api.fossasia.net",
+    "stargazers_count": 1512,
+    "language": "JavaScript",
+    "pushed_at": "2016-02-18T13:06:26Z",
+    "description": null
+  },
+  {
+    "full_name": "fossasia/loklak-timeline-plugin",
+    "stargazers_count": 1455,
+    "language": "JavaScript",
+    "pushed_at": "2018-12-08T06:58:52Z",
+    "description": "loklak timeline plugin"
+  },
+  {
+    "full_name": "thegamenicorus/react-native-timeline-listview",
+    "stargazers_count": 1182,
+    "language": "JavaScript",
+    "pushed_at": "2019-11-25T20:35:47Z",
+    "description": "Timeline component for React Native App"
+  },
+  {
+    "full_name": "flackr/scroll-timeline",
+    "stargazers_count": 1167,
+    "language": "JavaScript",
+    "pushed_at": "2024-08-26T15:21:30Z",
+    "description": "A polyfill of ScrollTimeline."
+  },
+  {
+    "full_name": "bujue3709/GPT-Conversation-Toolkit",
+    "stargazers_count": 966,
+    "language": "JavaScript",
+    "pushed_at": "2026-10-14T06:22:36Z",
+    "description": "A power-user toolkit for ChatGPT Web — full and selective conversation export, PNG long-image export, deep-history search, timeline navigation, prompt management, folders, and LaTeX copy."
+  },
+  {
+    "full_name": "ilkeryilmaz/timelinejs",
+    "stargazers_count": 883,
+    "language": "JavaScript",
+    "pushed_at": "2020-05-29T02:07:56Z",
+    "description": "🎬 jQuery timeline plugin, easily creates timeline slider."
+  },
+  {
+    "full_name": "MartinDelophy/ai-video-editor",
+    "stargazers_count": 842,
+    "language": "JavaScript",
+    "pushed_at": "2026-10-13T08:14:56Z",
+    "description": "Open-source, local-first video editor where creators and AI agents edit the same real timeline."
+  }
+]

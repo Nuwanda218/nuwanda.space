@@ -1,0 +1,100 @@
+[
+  {
+    "repo": "jerryc127/hexo-theme-butterfly",
+    "stars": 8364,
+    "license": "Apache-2.0",
+    "homepage": "https://butterfly.js.org",
+    "pushed": "10/08/2026 06:44:12"
+  },
+  {
+    "repo": "fluid-dev/hexo-theme-fluid",
+    "stars": 8166,
+    "license": "GPL-3.0",
+    "homepage": "https://hexo.fluid-dev.com/",
+    "pushed": "06/24/2026 16:52:51"
+  },
+  {
+    "repo": "litten/hexo-theme-yilia",
+    "stars": 8340,
+    "license": "NONE",
+    "homepage": "http://litten.me/",
+    "pushed": "07/02/2024 10:07:43"
+  },
+  {
+    "repo": "blinkfox/hexo-theme-matery",
+    "stars": 5358,
+    "license": "Apache-2.0",
+    "homepage": "https://blinkfox.github.io/",
+    "pushed": "07/02/2024 06:48:18"
+  },
+  {
+    "repo": "xaoxuu/hexo-theme-stellar",
+    "stars": 2060,
+    "license": "MIT",
+    "homepage": "https://xaoxuu.com/wiki/stellar/",
+    "pushed": "10/01/2026 09:42:13"
+  },
+  {
+    "repo": "probberechts/hexo-theme-cactus",
+    "stars": 3516,
+    "license": "MIT",
+    "homepage": "https://probberechts.github.io/hexo-theme-cactus/",
+    "pushed": "08/13/2024 13:41:13"
+  },
+  {
+    "repo": "mmistakes/minimal-mistakes",
+    "stars": 13588,
+    "license": "MIT",
+    "homepage": "https://mmistakes.github.io/minimal-mistakes/",
+    "pushed": "10/09/2026 08:32:08"
+  },
+  {
+    "repo": "cotes2020/jekyll-theme-chirpy",
+    "stars": 10289,
+    "license": "MIT",
+    "homepage": "https://chirpy.cotes.page",
+    "pushed": "09/10/2026 19:35:17"
+  },
+  {
+    "repo": "Huxpro/huxpro.github.io",
+    "stars": 7613,
+    "license": "Apache-2.0",
+    "homepage": "http://huangxuan.me",
+    "pushed": "09/13/2026 23:32:21"
+  },
+  {
+    "repo": "jekyll/minima",
+    "stars": 3836,
+    "license": "MIT",
+    "homepage": "https://jekyll.github.io/minima/",
+    "pushed": "04/07/2026 19:28:29"
+  },
+  {
+    "repo": "poole/lanyon",
+    "stars": 3265,
+    "license": "NOASSERTION",
+    "homepage": "http://lanyon.getpoole.com",
+    "pushed": "07/23/2024 03:13:01"
+  },
+  {
+    "repo": "kitian616/jekyll-TeXt-theme",
+    "stars": 0,
+    "license": "ERR",
+    "homepage": "",
+    "pushed": ""
+  },
+  {
+    "repo": "xugaoyi/vuepress-theme-vdoing",
+    "stars": 0,
+    "license": "ERR",
+    "homepage": "",
+    "pushed": ""
+  },
+  {
+    "repo": "dillonzq/LoveIt",
+    "stars": 0,
+    "license": "ERR",
+    "homepage": "",
+    "pushed": ""
+  }
+]

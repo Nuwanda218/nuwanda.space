@@ -1,0 +1,107 @@
+[
+  {
+    "full_name": "prabhuignoto/react-chrono",
+    "stargazers_count": 4204,
+    "language": "TypeScript",
+    "pushed_at": "2025-12-29T04:37:24Z",
+    "description": "Modern Timeline Component for React"
+  },
+  {
+    "full_name": "namespace-ee/react-calendar-timeline",
+    "stargazers_count": 2161,
+    "language": "TypeScript",
+    "pushed_at": "2026-07-24T09:36:24Z",
+    "description": "A modern and responsive react timeline component."
+  },
+  {
+    "full_name": "badrinathvm/StepperView",
+    "stargazers_count": 1363,
+    "language": "Swift",
+    "pushed_at": "2026-02-25T05:30:04Z",
+    "description": "SwiftUI iOS component for Step Indications.  "
+  },
+  {
+    "full_name": "thegamenicorus/react-native-timeline-listview",
+    "stargazers_count": 1182,
+    "language": "JavaScript",
+    "pushed_at": "2019-11-25T20:35:47Z",
+    "description": "Timeline component for React Native App"
+  },
+  {
+    "full_name": "daybrush/scena",
+    "stargazers_count": 937,
+    "language": "TypeScript",
+    "pushed_at": "2023-06-17T18:12:15Z",
+    "description": "🎬 Scena is a component that represents the timeline of Scene.js. You can control time, properties, and items."
+  },
+  {
+    "full_name": "xzdarcy/react-timeline-editor",
+    "stargazers_count": 800,
+    "language": "TypeScript",
+    "pushed_at": "2026-01-25T16:02:35Z",
+    "description": "react-timeline-editor is a react component used to quickly build a timeline animation editor."
+  },
+  {
+    "full_name": "guiqui/react-timeline-gantt",
+    "stargazers_count": 589,
+    "language": "JavaScript",
+    "pushed_at": "2023-10-25T13:59:32Z",
+    "description": "A react Timeline component with virtual rendering"
+  },
+  {
+    "full_name": "evilrabbit/lifeline",
+    "stargazers_count": 540,
+    "language": "TypeScript",
+    "pushed_at": "2026-07-31T16:42:28Z",
+    "description": "A timeline component for the stories that unfold over time. Ships as a shadcn registry."
+  },
+  {
+    "full_name": "Eugnis/react-native-timeline-flatlist",
+    "stargazers_count": 520,
+    "language": "TypeScript",
+    "pushed_at": "2026-07-18T13:13:03Z",
+    "description": "FlatList based timeline component for React Native for iOS and Android"
+  },
+  {
+    "full_name": "NigelOToole/progress-tracker",
+    "stargazers_count": 513,
+    "language": "CSS",
+    "pushed_at": "2026-01-21T23:27:41Z",
+    "description": "A HTML component to illustrate the steps in a multi step process e.g. a multi step form, a timeline or a quiz."
+  },
+  {
+    "full_name": "shadcn-labs/mdxcn",
+    "stargazers_count": 427,
+    "language": "TypeScript",
+    "pushed_at": "2026-10-07T12:36:06Z",
+    "description": "mdxcn is a free, open-source set of callouts, steps, terminals, charts, and timelines for mdx. copy any component with the shadcn cli."
+  },
+  {
+    "full_name": "kristw/d3kit-timeline",
+    "stargazers_count": 384,
+    "language": "JavaScript",
+    "pushed_at": "2022-12-27T19:45:27Z",
+    "description": "A simple timeline component that labels do not overlap."
+  },
+  {
+    "full_name": "LeCoupa/vuetimeline",
+    "stargazers_count": 350,
+    "language": "SCSS",
+    "pushed_at": "2022-12-30T19:31:55Z",
+    "description": "🕵️‍♀️🕵️‍♂️ One easy-to-use component for Vue.js to build beautiful responsive timelines."
+  },
+  {
+    "full_name": "timDeHof/shadcn-timeline",
+    "stargazers_count": 317,
+    "language": "JavaScript",
+    "pushed_at": "2026-05-07T13:49:19Z",
+    "description": "Customizable and re-usable timeline component for you to use in your projects. Built on top of shadcn. "
+  },
+  {
+    "full_name": "luyilin/vue-cute-timeline",
+    "stargazers_count": 315,
+    "language": "Vue",
+    "pushed_at": "2021-10-04T07:37:52Z",
+    "description": "A cute timeline component for Vue.js."
+  }
+]

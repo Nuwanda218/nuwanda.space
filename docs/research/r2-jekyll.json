@@ -1,0 +1,107 @@
+[
+  {
+    "full_name": "alshedivat/al-folio",
+    "stargazers_count": 16244,
+    "language": "HTML",
+    "pushed_at": "2026-10-12T12:06:26Z",
+    "description": "A beautiful, simple, clean, and responsive Jekyll theme for academics"
+  },
+  {
+    "full_name": "mmistakes/minimal-mistakes",
+    "stargazers_count": 13588,
+    "language": "HTML",
+    "pushed_at": "2026-10-09T08:32:08Z",
+    "description": ":triangular_ruler: Jekyll theme for building a personal site, blog, project documentation, or portfolio."
+  },
+  {
+    "full_name": "cotes2020/jekyll-theme-chirpy",
+    "stargazers_count": 10289,
+    "language": "HTML",
+    "pushed_at": "2026-09-10T19:35:17Z",
+    "description": "A minimal, responsive, and feature-rich Jekyll theme for technical writing."
+  },
+  {
+    "full_name": "just-the-docs/just-the-docs",
+    "stargazers_count": 9200,
+    "language": "SCSS",
+    "pushed_at": "2026-10-12T02:36:39Z",
+    "description": "A modern, high customizable, responsive Jekyll theme for documentation with built-in search."
+  },
+  {
+    "full_name": "Huxpro/huxpro.github.io",
+    "stargazers_count": 7613,
+    "language": "HTML",
+    "pushed_at": "2026-09-13T23:32:21Z",
+    "description": "My Blog / Jekyll Themes / PWA"
+  },
+  {
+    "full_name": "assemble/assemble",
+    "stargazers_count": 4256,
+    "language": "CSS",
+    "pushed_at": "2022-02-20T09:16:14Z",
+    "description": "Get the rocks out of your socks! Assemble makes you fast at web development! Used by thousands of projects for rapid prototyping, themes, scaffolds, boilerplates, e-books, UI components, API documentation, blogs, building websites/static site generator, an alternative to Jekyll for gh-pages and more! Gulp- and grunt-friendly.  "
+  },
+  {
+    "full_name": "jekyll/minima",
+    "stargazers_count": 3836,
+    "language": "SCSS",
+    "pushed_at": "2026-04-07T19:28:29Z",
+    "description": "Minima is a one-size-fits-all Jekyll theme for writers."
+  },
+  {
+    "full_name": "poole/hyde",
+    "stargazers_count": 3790,
+    "language": "CSS",
+    "pushed_at": "2024-07-03T19:48:54Z",
+    "description": "A brazen two-column theme for Jekyll."
+  },
+  {
+    "full_name": "emilbaehr/automatic-app-landing-page",
+    "stargazers_count": 3630,
+    "language": "SCSS",
+    "pushed_at": "2026-09-05T08:31:10Z",
+    "description": "A Jekyll theme for automatically generating and deploying landing page sites for mobile apps."
+  },
+  {
+    "full_name": "sharu725/online-cv",
+    "stargazers_count": 3486,
+    "language": "JavaScript",
+    "pushed_at": "2025-08-12T10:56:41Z",
+    "description": "A minimal Jekyll Theme to host your resume (CV) on GitHub with a few clicks."
+  },
+  {
+    "full_name": "kitian616/jekyll-TeXt-theme",
+    "stargazers_count": 3344,
+    "language": "SCSS",
+    "pushed_at": "2026-06-08T14:57:40Z",
+    "description": "💎 🐳 A super customizable Jekyll theme for personal site, team site, blog, project, documentation, etc."
+  },
+  {
+    "full_name": "poole/lanyon",
+    "stargazers_count": 3265,
+    "language": "CSS",
+    "pushed_at": "2024-07-23T03:13:01Z",
+    "description": "A content-first, sliding sidebar theme for Jekyll."
+  },
+  {
+    "full_name": "poole/poole",
+    "stargazers_count": 2848,
+    "language": "CSS",
+    "pushed_at": "2024-05-23T02:50:01Z",
+    "description": "The Jekyll Butler. A no frills responsive Jekyll blog theme."
+  },
+  {
+    "full_name": "sergiokopplin/indigo",
+    "stargazers_count": 2720,
+    "language": "HTML",
+    "pushed_at": "2024-07-27T17:59:31Z",
+    "description": "Minimalist Jekyll Template, dark and light themes"
+  },
+  {
+    "full_name": "mattvh/jekyllthemes",
+    "stargazers_count": 2332,
+    "language": "CSS",
+    "pushed_at": "2024-07-10T18:45:27Z",
+    "description": "A directory of the best-looking themes for Jekyll blogs"
+  }
+]
