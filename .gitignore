@@ -2,14 +2,56 @@
 *.key
 *.pem
 *.crt
+*.pfx
+*.p12
 *_nginx.zip
 .deploy-private/
 
 # ── 本地部署暂存 ─────────────────────────────────────────────────
 .nuwanda-deploy-*/
 
+# ── 临时预览工具（对比设计用，选完即可整体删除）───────────────────
+preview/
+
+# ── 本地分析工具产物：报告、缓存与截图 ──────────────────────────
+/.archify/
+
 # ── 编辑器与系统 ─────────────────────────────────────────────────
 .vscode/
 .idea/
 Thumbs.db
 desktop.ini
+.DS_Store
+*.swp
+*.swo
+
+# 本地开发：依赖、产物、环境与数据库
+node_modules/
+dist/
+.astro/
+.local/
+.env
+.env.*
+!.env.example
+pgdata/
+.postgres/
+coverage/
+*.log
+*.tmp
+*.tsbuildinfo
+
+# 工具缓存与浏览器测试输出
+.cache/
+.vite/
+.npm/
+.pnpm-store/
+.eslintcache
+.stylelintcache
+playwright-report/
+test-results/
+
+# Python 部署/核验脚本产生的缓存
+__pycache__/
+*.py[cod]
+
+# 源码、materials/ 原始素材、docs/、部署脚本和 package-lock.json 保留入库。

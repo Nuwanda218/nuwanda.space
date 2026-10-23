@@ -1,0 +1,9 @@
+---
+import LocalLayout from '../../layouts/LocalLayout.astro';
+export const prerender = true;
+---
+<LocalLayout title="静态页面验收">
+  <h1>静态页面验收</h1>
+  <p data-render-mode="ssg">SSG_SMOKE_OK</p>
+  <p>此内容在构建时生成，查看它无需查询数据库。</p>
+</LocalLayout>

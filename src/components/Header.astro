@@ -1,0 +1,12 @@
+---
+import { site } from '../data/site';
+interface Props { cover?: boolean }
+const { cover = false } = Astro.props;
+---
+<header class:list={['site-header', 'container', { 'on-cover': cover }]}>
+  <a class="wordmark" href="/" aria-label="nuwanda.space 首页">{site.name}</a>
+  <nav aria-label="主导航">
+    <a href="/life/">进入博客 <span aria-hidden="true">↗</span></a>
+    <a href="/about/" aria-current={Astro.url.pathname.replace(/\/$/, '') === '/about' ? 'page' : undefined}>关于</a>
+  </nav>
+</header>

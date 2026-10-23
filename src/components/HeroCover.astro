@@ -1,0 +1,21 @@
+---
+import { Picture } from 'astro:assets';
+import Header from './Header.astro';
+import { sections, site } from '../data/site';
+---
+<section class="hero-cover" aria-labelledby="hero-title" style={`--cover-position: ${site.cover.position}`}>
+  <Picture src={site.cover.src} formats={['webp']} fallbackFormat="jpeg" widths={[640, 960, 1440, 1920, 2400]} sizes="(max-aspect-ratio: 4/3) max(1100px, 134vh), 100vw" width={2400} loading="eager" fetchpriority="high" quality={82} alt={site.cover.alt} class="hero-photo" />
+  <div class="hero-shade" aria-hidden="true"></div>
+  <Header cover />
+  <div class="cover-copy container">
+    <p class="eyebrow" lang="en">A PERSONAL JOURNAL / NUWANDA.SPACE</p>
+    <h1 id="hero-title">{site.name}<span aria-hidden="true">.</span></h1>
+    <p class="cover-tagline">{site.tagline}</p>
+    <p class="cover-description">{site.description}</p>
+    <a class="enter-link" href="/life/">进入博客<span aria-hidden="true">↗</span></a>
+  </div>
+  <div class="cover-bottom container" id="explore">
+    <nav aria-label="探索内容">{sections.map((section) => <a href={`/${section.slug}/`}><span class="cover-number">{section.number}</span>{section.title}<span aria-hidden="true">↗</span></a>)}</nav>
+    <p class="cover-credit">{site.cover.caption}</p>
+  </div>
+</section>

@@ -1,0 +1,19 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { site } from '../data/site';
+export const prerender = true;
+---
+<SiteLayout title="About · nuwanda.space" description="关于 nuwanda.space：一个记录生活、摄影、学习与共同岁月的个人空间。">
+  <article class="inner-page container">
+    <a class="back-link" href="/">← 返回首页</a>
+    <p class="eyebrow" lang="en">ABOUT THIS SPACE</p>
+    <h1 lang="en">A space to<br /><em>remember.</em></h1>
+    <div class="prose">
+      <h2>关于这里</h2>
+      <p>{site.description}</p>
+      <p>这里是 Nuwanda 的个人空间，记录生活与摄影、学习与思考，也留存关于国旗护卫队的共同岁月。</p>
+      <p>从生活与摄影开始，也可以翻阅学习笔记和国旗护卫队专题。</p>
+      <a class="quiet-link" href="/life/">进入博客<span aria-hidden="true">↗</span></a>
+    </div>
+  </article>
+</SiteLayout>

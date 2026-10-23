@@ -1,0 +1,11 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import HeroCover from '../components/HeroCover.astro';
+import Footer from '../components/Footer.astro';
+import { site } from '../data/site';
+export const prerender = true;
+---
+<SiteLayout title="Nuwanda · 生活有迹，思考有声" description={site.description} shell={false} cover>
+  <HeroCover />
+  <Footer slot="footer" />
+</SiteLayout>

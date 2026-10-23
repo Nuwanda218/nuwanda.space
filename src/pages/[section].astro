@@ -1,0 +1,9 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+export const prerender = true;
+// Keep old shared links usable, without duplicating the guard page in search.
+export function getStaticPaths() { return [{ params: { section: 'timeline' } }]; }
+---
+<SiteLayout title="专题入口已更新 · Nuwanda" description="国旗护卫队专题已迁移至 /guard/。" noindex>
+  <article class="inner-page container"><p class="eyebrow">GUARD / ARCHIVE</p><h1>共同的岁月</h1><div class="prose"><p>国旗护卫队专题已有独立入口。</p><a class="quiet-link" href="/guard/">进入国旗护卫队专题 <span aria-hidden="true">↗</span></a></div></article>
+</SiteLayout>

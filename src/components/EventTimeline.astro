@@ -1,0 +1,13 @@
+---
+import { Picture } from 'astro:assets';
+import { getMaterials } from '../lib/materials';
+const events = await getMaterials('guard');
+---
+<ol class="event-timeline" aria-label="国旗护卫队大事记">
+  {events.map(({ Content, ...event }) => <li><article class="event" id={event.slug}>
+    <div class="event-date">{event.demo && <span>示例日期</span>}{event.date && <time datetime={event.date}>{event.date.replaceAll('-', '.')}</time>}{event.demo && <span class="demo-label">演示事件</span>}</div>
+    <div class="event-copy"><p class="eyebrow">{event.category || '专题记录'}</p><h2>{event.title}</h2><div class="material-body"><Content /></div></div>
+    <div class="event-photos">{event.photos.map(photo => <figure><Picture src={photo.src} formats={['webp']} fallbackFormat="jpeg" widths={[400, 640, 960]} sizes="(max-width: 700px) calc(100vw - 68px), 35vw" width={960} loading="lazy" quality={82} alt={photo.alt} /><figcaption>{photo.caption || photo.alt}</figcaption></figure>)}</div>
+  </article></li>)}
+</ol>
+{events.length === 0 && <p class="empty-state">这里还没有公开的大事记。</p>}

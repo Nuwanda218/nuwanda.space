@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /environment/
+Disallow: /api/
+Sitemap: https://nuwanda.space/sitemap.xml

@@ -1,0 +1,21 @@
+---
+import LocalLayout from '../../layouts/LocalLayout.astro';
+export const prerender = true;
+---
+<LocalLayout title="开发环境">
+  <h1>本地开发环境</h1>
+  <p>这是 Astro 基础环境的验收入口。网站内容将在后续开发。</p>
+  <ul>
+    <li><a href="/environment/ssg/">静态页面</a></li>
+    <li><a href="/environment/ssr/">动态页面</a></li>
+    <li><a href="/api/health">API 响应</a></li>
+  </ul>
+  <button id="verify-browser" type="button">检查浏览器脚本</button>
+  <p id="browser-result" role="status">等待检查</p>
+</LocalLayout>
+<script>
+  document.querySelector('#verify-browser')?.addEventListener('click', () => {
+    const result = document.querySelector('#browser-result');
+    if (result) result.textContent = '浏览器脚本正常';
+  });
+</script>

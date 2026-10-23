@@ -1,0 +1,12 @@
+---
+import { randomUUID } from 'node:crypto';
+import LocalLayout from '../../layouts/LocalLayout.astro';
+export const prerender = false;
+Astro.response.headers.set('Cache-Control', 'no-store');
+const requestId = randomUUID();
+---
+<LocalLayout title="动态页面验收">
+  <h1>动态页面验收</h1>
+  <p data-render-mode="ssr">SSR_SMOKE_OK</p>
+  <p>本次请求标识：<code id="request-id">{requestId}</code></p>
+</LocalLayout>

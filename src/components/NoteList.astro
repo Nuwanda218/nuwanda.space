@@ -1,0 +1,15 @@
+---
+import { Picture } from 'astro:assets';
+import { getMaterials } from '../lib/materials';
+const notes = await getMaterials('notes');
+---
+<section class="note-list" aria-label="文章列表">
+  {notes.map(({ Content, ...note }, i) => <article class="note-entry" id={note.slug}>
+    <span class="note-number" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+    <div class="note-body"><div class="note-meta"><span>{note.category || '学习笔记'}</span>{note.demo && <span class="demo-label">演示文章</span>}</div><h2>{note.title}</h2><p>{note.summary}</p>
+      <details><summary>{note.demo ? '展开示例片段' : '展开正文'} <span aria-hidden="true">＋</span></summary><div class="note-excerpt material-body"><Content />{note.photos.map(photo => <figure><Picture src={photo.src} formats={['webp']} fallbackFormat="jpeg" widths={[400, 640, 960]} width={960} sizes="(max-width:700px) calc(100vw - 80px), 600px" alt={photo.alt} loading="lazy" /><figcaption>{photo.caption || photo.alt}</figcaption></figure>)}{note.demo && <p class="intro-note">演示内容 · 尚未发布完整文章</p>}</div></details>
+    </div>
+    {note.date && <time datetime={note.date}>{note.demo && <span class="intro-note">示例日期</span>}{note.date.replaceAll('-', '.')}</time>}
+  </article>)}
+  {notes.length === 0 && <p class="empty-state">这里还没有公开的笔记。</p>}
+</section>

@@ -1,0 +1,18 @@
+---
+import { Picture } from 'astro:assets';
+import { getMaterials } from '../lib/materials';
+const entries = await getMaterials('life');
+---
+<section class="life-feed" aria-label="生活与摄影记录">
+  {entries.map(({ Content, ...entry }) => <article class="life-entry" id={entry.slug}>
+    <header class="life-entry-head">
+      <div class="material-meta">{entry.date && <time datetime={entry.date}>{entry.date.replaceAll('-', '.')}</time>}{entry.demo && <span class="demo-label">选图示例</span>}</div>
+      <h3>{entry.title}</h3>
+      <div class="material-body"><Content /></div>
+    </header>
+    <div class="life-photos">
+      {entry.photos.map((photo, i) => <figure><Picture src={photo.src} formats={['webp']} fallbackFormat="jpeg" widths={[400, 640, 960, 1280]} sizes="(max-width: 700px) calc(100vw - 40px), 65vw" width={1280} loading="lazy" quality={82} alt={photo.alt} /><figcaption><span>{photo.caption || photo.alt}</span><span lang="en">FRAME {String(i + 1).padStart(2, '0')}</span></figcaption></figure>)}
+    </div>
+  </article>)}
+  {entries.length === 0 && <p class="empty-state">这里还没有公开的生活记录。</p>}
+</section>

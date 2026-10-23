@@ -1,0 +1,47 @@
+{
+  "name": "nuwanda-space",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "npm@11.19.1",
+  "engines": {
+    "node": ">=24.22.0 <25",
+    "npm": ">=11 <12"
+  },
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "dev": "astro dev --host 127.0.0.1",
+    "dev:full": "npm run db:up && npm run dev",
+    "stop": "npm run db:stop",
+    "check": "astro check",
+    "build": "astro build",
+    "start": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:output": "node scripts/check-output.mjs",
+    "test:framework": "node scripts/check-framework.mjs",
+    "test:materials": "node scripts/check-materials-roundtrip.mjs",
+    "test:materials:dev": "node scripts/check-materials-live.mjs",
+    "test:browser": "node scripts/check-framework-browser.mjs",
+    "test:dev": "node scripts/smoke.mjs --dev",
+    "test:production": "node scripts/smoke.mjs --production",
+    "check:security": "node scripts/check-security.mjs",
+    "verify": "npm ls --depth=0 && npm run check && npm test && npm run build && npm run test:output && npm run test:dev && npm run test:production && npm run check:security && npm run db:test",
+    "db:up": "node scripts/db.mjs up",
+    "db:stop": "node scripts/db.mjs stop",
+    "db:status": "node scripts/db.mjs status",
+    "db:logs": "node scripts/db.mjs logs",
+    "db:reset": "node scripts/db.mjs reset",
+    "db:test": "node scripts/db-test.mjs",
+    "db:test:persistence": "node scripts/db-persistence-test.mjs"
+  },
+  "dependencies": {
+    "@astrojs/node": "11.1.7",
+    "astro": "7.3.8",
+    "pg": "8.23.1"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.10",
+    "@types/node": "24.19.2",
+    "typescript": "5.9.3"
+  }
+}

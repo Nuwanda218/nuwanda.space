@@ -1,0 +1,9 @@
+---
+interface Props { number: string; label: string; title: string; description: string; note?: string }
+const { number, label, title, description, note } = Astro.props;
+const [lead, ...rest] = title.split('，');
+---
+<section class="page-intro" aria-labelledby="page-title">
+  <div><p class="eyebrow" lang="en">{number} / {label}</p><h1 id="page-title">{lead}{rest.length > 0 && <>，<br />{rest.join('，')}</>}</h1></div>
+  <div class="page-intro-copy"><p>{description}</p>{note && <p class="intro-note">{note}</p>}</div>
+</section>

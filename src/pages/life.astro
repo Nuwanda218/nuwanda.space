@@ -1,0 +1,14 @@
+---
+import BlogLayout from '../layouts/BlogLayout.astro';
+import PageIntro from '../components/PageIntro.astro';
+import LifeGallery from '../components/LifeGallery.astro';
+import { sections } from '../data/site';
+export const prerender = true;
+const section = sections[0];
+---
+<BlogLayout title="生活与摄影 · Nuwanda" description={section.description} active="life">
+  <PageIntro number="01" label="LIFE, IN FRAMES" title="把日常，留在这里。" description={section.description} note="一些照片，一点文字。让平常的日子有迹可循。" />
+  <div class="collection-heading"><h2>日常切片</h2><p lang="en">SMALL MOMENTS, KEPT.</p></div>
+  <LifeGallery />
+  <p class="end-note">生活继续，记录也慢慢继续。<span aria-hidden="true">＊</span></p>
+</BlogLayout>

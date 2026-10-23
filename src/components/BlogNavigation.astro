@@ -1,0 +1,12 @@
+---
+import { sections, site, type SectionSlug } from '../data/site';
+interface Props { active: SectionSlug }
+const { active } = Astro.props;
+---
+<header class="blog-header container">
+  <a class="wordmark" href="/" aria-label="nuwanda.space 首页">{site.name}<span aria-hidden="true">.</span></a>
+  <nav class="blog-nav" aria-label="博客模块">
+    {sections.map((section) => <a href={`/${section.slug}/`} aria-current={active === section.slug ? 'page' : undefined}><span lang="en">{section.name}</span><span>{section.title}</span></a>)}
+  </nav>
+  <a class="home-link" href="/">封面 <span aria-hidden="true">↗</span></a>
+</header>

@@ -1,0 +1,16 @@
+---
+import BlogLayout from '../layouts/BlogLayout.astro';
+import PageIntro from '../components/PageIntro.astro';
+import EventTimeline from '../components/EventTimeline.astro';
+import { sections } from '../data/site';
+import { getMaterials } from '../lib/materials';
+export const prerender = true;
+const hasDemo = (await getMaterials('guard')).some(event => event.demo);
+---
+<BlogLayout title="国旗护卫队 · Nuwanda" description={sections[2].description} active="guard" noindex={hasDemo}>
+  <PageIntro number="03" label="GUARD / A SHARED ARCHIVE" title="共同的岁月，值得被记住。" description={sections[2].description} note="国旗护卫队 · 仪式、训练与相聚的片刻" />
+  <div class="guard-heading"><div><p class="eyebrow" lang="en">CHRONICLE</p><h2>把时间，连成故事。</h2></div><p>一份关于集体的纪实档案<br />从每一次具体的记录开始</p></div>
+  {hasDemo && <p class="demo-notice">标有“演示事件”的记录仅用于展示：日期、事件标题与说明均待真实资料替换。配图不代表对应示例事件真实发生。</p>}
+  <EventTimeline />
+  <p class="end-note">更多故事，等待一起整理。<span aria-hidden="true">＊</span></p>
+</BlogLayout>

@@ -1,0 +1,15 @@
+---
+import BlogLayout from '../layouts/BlogLayout.astro';
+import PageIntro from '../components/PageIntro.astro';
+import NoteList from '../components/NoteList.astro';
+import { sections } from '../data/site';
+import { getMaterials } from '../lib/materials';
+export const prerender = true;
+const notes = await getMaterials('notes');
+const hasDemo = notes.some(note => note.demo);
+const allDemo = notes.length > 0 && notes.every(note => note.demo);
+---
+<BlogLayout title="学习笔记与文章 · Nuwanda" description={sections[1].description} active="notes" noindex={hasDemo}>
+  <PageIntro number="02" label="NOTES & THOUGHTS" title="在学习中，慢慢想明白。" description={sections[1].description} note="给知识留一个位置，也给问题留一点空间。" />
+  <div class="notes-layout"><aside class="notes-aside"><p class="eyebrow" lang="en">THE NOTEBOOK</p><h2>学习笔记<br />与原创文章</h2><p>记录理解的过程，<br />也保留尚未完成的思考。</p></aside><div><div class="collection-heading"><h2>笔记目录</h2><p>{String(notes.length).padStart(2, '0')} 篇{allDemo ? '演示文章' : '文章'}</p></div>{hasDemo && <p class="demo-notice">标有“演示文章”的标题、日期和正文仅用于展示排版，不是已发表文章。</p>}<NoteList /></div></div>
+</BlogLayout>
